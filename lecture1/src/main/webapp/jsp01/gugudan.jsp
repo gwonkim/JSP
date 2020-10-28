@@ -9,26 +9,26 @@
 table {
 	border-collapse: collapse;
 }
+
 td {
-		border : 1px solid;	
-		width : 80px; 
-		text-align : center;
+	border: 1px solid;
+	width: 80px;
+	height: 20px;
 }
 </style>
 </head>
 <body>
-	<table>
 		<%
-			for(int i=1; i<10; i++){
-				out.println("<tr>");
-				for(int j=2; j<10; j++){
-					out.print("<td> "+j+" x "+i);
-					out.print(" = ");
-					out.print((j*i)+" </td>");
-					
-				}
-				out.print("</tr>");
+			for (int i = 1; i < 10; i++) {
+			out.println("<tr>");
+			for (int j = 2; j < 10; j++) {
+				out.print("<td> " + j + " x " + i);
+				out.print(" = ");
+				out.print((j * i) + " </td>");
+
 			}
+			out.print("</tr>");
+		}
 		%>
 
 	</table>
